@@ -1,0 +1,219 @@
+/*
+-	website-4 "Master"
+-	CopyRight by Master Mayank
+-	Design & Developed by Mayank
+-	CSS : css/service
+*/
+#service
+{
+    min-height: 100vh;
+}
+/*
+    SERVICE CSS ------------------------
+*/
+#service_page
+{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+}
+.service_box
+{
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    color:var(--light);
+    border:1px solid transparent;
+    box-shadow: 1px 1px 5px var(--lskyblue);
+}
+/* box colour */
+.service_box:nth-child(1) .srv_icon .fa
+{
+    color: #0bd6d6;
+    background: rgba(11, 214, 214,0.2);
+}
+.service_box:nth-child(2) .srv_icon .fa
+{
+    color: #7cf000;
+    background: rgba(124, 240, 0, 0.2);
+}
+.service_box:nth-child(3) .srv_icon .fa
+{
+    color: #ff69b4;
+    background: rgba(255, 105, 180,0.2);
+}
+.service_box:nth-child(4) .srv_icon .fa
+{
+    color:#6a5acd;
+    background: rgba(106, 90, 205, 0.2);
+}
+
+.service_box:nth-child(5) .srv_icon .fa
+{
+    color: #ffa600;
+    background: rgba(255, 166, 0, 0.2);
+}
+.service_box:nth-child(6) .srv_icon .fa
+{
+    color:#dc143c;
+    background: rgba(220, 20, 60, 0.2);
+}
+.service_box:nth-child(7) .srv_icon .fa
+{
+    color: #fa8072;
+    background: rgba(250, 128, 114, 0.2);
+}
+.service_box:nth-child(8) .srv_icon .fa
+{
+    color:#4682b4;
+    background: rgba(70, 130, 180, 0.2);
+}
+.service_box:nth-child(9) .srv_icon .fa
+{
+    color:#1e272e;
+    background: rgba(30, 39, 46,0.2);
+}
+/* hover effect */
+.service_box:nth-child(1):hover
+{
+    border-color:#0bd6d6;
+}
+.service_box:nth-child(2):hover
+{
+    border-color: #7cf000;
+}
+.service_box:nth-child(3):hover
+{
+    border-color:#ff69b4;
+}
+.service_box:nth-child(4):hover
+{
+    border-color:#6a5acd;
+}
+.service_box:nth-child(5):hover
+{
+    border-color:#ffa600;
+}
+.service_box:nth-child(6):hover
+{
+    border-color:#dc143c;
+}
+.service_box:nth-child(7):hover
+{
+    border-color: #fa8072;
+}
+.service_box:nth-child(8):hover
+{
+    border-color:#4682b4;
+}
+.service_box:nth-child(9):hover
+{
+    border-color:#1e272e;
+}
+/* end trand */
+.service_box .srv_icon .fa
+{
+    opacity: 1;
+}
+.service_box:hover .srv_icon .fa
+{
+    opacity: 0.5;
+}
+.serve_title
+{
+    font:20px 'arial';
+}
+.service_box:last-child .serve_title
+{
+    color:var(--skyblue);
+}
+/*
+    PRICE CSS ---------------------------
+*/
+#price_page
+{
+    display: grid;
+    grid-gap:2rem;
+    grid-template-columns: repeat(3,1fr);
+    padding: 3rem 2rem;
+}
+.price_box
+{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 2px solid var(--dark);
+    border-radius: 0.5rem;
+}
+.price_box:hover
+{
+    border-color: var(--lskyblue);
+}
+.amount
+{
+    padding: 1rem;
+    font: 5rem 'arial';
+    color: var(--dskyblue);
+}
+.amount > sub
+{
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.option
+{
+    display: block;
+    list-style: none;
+    text-align: left;
+}
+.option > li
+{
+    padding: 0.5rem 0;
+}
+.check,
+.cross
+{
+    margin: 5px;
+    padding: 2px;
+    display: inline-block;
+    background: #c3e6cb;
+}
+.price_btn
+{
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: var(--dskyblue);
+    background:transparent;
+    border:2px solid var(--skyblue);
+}
+.price_btn:hover
+{
+    color:var(--light);
+    background:var(--skyblue);
+}
+.price_box:nth-child(2)
+{
+    box-shadow: 2px 2px 5px var(--dblue);
+}
+.price_box:nth-child(2) .option
+{
+    color:var(--dblue);
+}
+.price_box:nth-child(2) .price_btn
+{
+    border-radius: 3rem;
+    color: var(--light);
+    background:var(--skyblue);
+    box-shadow: 1px 1px 3px var(--dblue);
+}
+.price_box:nth-child(2) .price_btn:hover
+{
+    box-shadow: 3px 3px 5px var(--dblue);
+}
+/*
+THE END ============================
+*/

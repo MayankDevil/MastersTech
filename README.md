@@ -8,7 +8,7 @@
 
 - Update : 24-06-2023
 
-- Status : ACTIVE
+- Status : REST
 
 - Responsive : Ture
 
@@ -36,6 +36,11 @@
 
 ![Alt text](./data/MasterCompany.png "HomePage")
 
+
+### Architecture
+
+_Component base architecture improve reuseablity and reduce code help easy to modify._
+
 ### Responsive
 
 **Breakpoints** { 576 | 768 | 992 | 1200 }
@@ -43,5 +48,7 @@
 ### Theme Mode
 
 _Blue colour theme with require colour, it is companay website that represent Company._
+
+
 
 

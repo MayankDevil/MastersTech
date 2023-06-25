@@ -136,84 +136,58 @@
     display: grid;
     grid-gap:2rem;
     grid-template-columns: repeat(3,1fr);
-    padding: 3rem 2rem;
+    padding: 2rem 1rem 6rem 1rem;
 }
 .price_box
 {
-    padding: 0.5rem 1rem;
-    text-align: center;
-    border: 2px solid var(--dark);
-    border-radius: 0.5rem;
+    display: block;
+    padding: 1rem;
+    background: var(--blue);
+    border-radius: 10px;
+}
+.price_box:nth-child(1)
+{
+    background: var(--black);
+}
+.price_box:nth-child(2)
+{
+    background: var(--dblue);
 }
 .price_box:hover
 {
-    border-color: var(--lskyblue);
+    box-shadow: 5px 5px 20px var(--black);
 }
-.amount
+.price_box .title
 {
-    padding: 1rem;
-    font: 5rem 'arial';
-    color: var(--dskyblue);
+    color:var(--white);
+    font:18px var(--write);
 }
-.amount > sub
+.price_box .amount
 {
-    display: block;
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    font: 5rem var(--write);
+    color:var(--dark)
 }
-.option
+.price_box .amount sub
 {
-    display: block;
+    font-size: 16px;
+    color: var(--skyblue);
+}
+ol li
+{
     list-style: none;
     text-align: left;
-}
-.option > li
-{
-    padding: 0.5rem 0;
+    color:var(--lskyblue);
 }
 .check,
 .cross
 {
-    margin: 5px;
-    padding: 2px;
+    margin: 5px;   
     display: inline-block;
-    background: #c3e6cb;
+    color: #c3e6cb;
 }
-.price_btn
-{
-    display: block;
-    width: 100%;
-    margin: 1rem auto;
-    padding: 1rem;
-    font-size: 1.1rem;
-    color: var(--dskyblue);
-    background:transparent;
-    border:2px solid var(--skyblue);
-}
-.price_btn:hover
-{
-    color:var(--light);
-    background:var(--skyblue);
-}
-.price_box:nth-child(2)
-{
-    box-shadow: 2px 2px 5px var(--dblue);
-}
-.price_box:nth-child(2) .option
-{
-    color:var(--dblue);
-}
-.price_box:nth-child(2) .price_btn
-{
-    border-radius: 3rem;
-    color: var(--light);
-    background:var(--skyblue);
-    box-shadow: 1px 1px 3px var(--dblue);
-}
-.price_box:nth-child(2) .price_btn:hover
-{
-    box-shadow: 3px 3px 5px var(--dblue);
-}
+
 /*
 THE END ============================
 */

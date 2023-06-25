@@ -29,21 +29,6 @@
     {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    /* CONTACT */
-    #contact_page
-    {
-        grid-template-columns: 1fr 1fr;
-    }
-    /* COMMENT */
-    .comment
-    {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
-    }
-    input[name="subject"]
-    {
-        grid-column: 1/-1;
-    }
 }
 /*
     992PX SCREEN CSS -------------------------------
@@ -108,6 +93,11 @@
     #service_page
     {
         grid-template-columns: repeat(3,1fr);
+    }
+    /* PRICE */
+    #price_page
+    {
+        grid-template-columns: repeat(2,1fr);
     }
     /* FOOTER */
     #newsletter
@@ -213,16 +203,35 @@
         grid-template-columns: repeat(2,1fr);
     }
     /* SERVICE */
-    #service_page,
-    /* PRICE */
-    #price_page
+    #service_page
     {
         grid-template-columns: repeat(2,1fr);
+    }
+    /* PRICE */
+    .price_box .amount
+    {
+        padding: 2rem 0;
+        font: 4rem var(--write);
     }
     /* CONTACT */
     #contact_page
     {
+        width: 100%;
+        padding: 0;
+    }
+    /* CONTACT US */
+    .contact_us
+    {
+        grid-gap:1rem;
         grid-template-columns: 1fr;
+        margin:1rem;
+        padding: 1rem;
+        background: var(--dblue);
+        border-radius: 1rem;
+    }
+    #contact_page div
+    {
+        color:var(--light);
     }
     /* MAP */
     #location
@@ -314,23 +323,20 @@
         grid-template-columns: 1fr;
     }
     /* SERVICE */
-    #service_page,
+    #service_page
+    {
+        grid-template-columns: 1fr;
+    }
     /* PRICE */
     #price_page
     {
         grid-template-columns: 1fr;
     }
-    /* US */
-    .contact_us
+    .price_box .amount
     {
-        margin:2rem auto;
-        width: 90%;
-    }
-    /* COMMENT */
-    .comment
-    {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr;
+        padding: 2rem 0;
+        text-align: right;
+        font: 4rem var(--write);
     }
     /* MAP */
     #location

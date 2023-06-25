@@ -6,6 +6,7 @@
 */
 try
 {
+	// window.onload = () => {
 	/*
 		------------------
 		| MENU OPERATION |
@@ -65,8 +66,9 @@ try
 	// {
 	// 	goto_btn.onclick = () => this.style.zIndex = '-5';
 	// }
+	// }
 }
 catch(error)
 {
-	alert(console.error(error));
+	console.error(error)
 }

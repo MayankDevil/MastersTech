@@ -13,71 +13,27 @@
 */
 #contact_page
 {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
+    padding: 2rem;
+    margin: 3rem auto;
 }
-/*
-    US CSS ------------------------------
-*/
 .contact_us
 {
-    width: 80%;
-    margin:3rem auto;
-    padding: 1rem 0;
-    box-shadow: 2px 2px 5px var(--blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.contact_us > a
+#contact_page div
+{
+    font: 1rem var(--write);
+}
+#contact_page div a
 {
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 10fr;
+    font: 1rem var(--write);
+    color:var(--skyblue);
 }
-.contact_us .center
+#contact_page div a:hover
 {
-    padding: 1rem 0;
-}
-/*
-    COMMENT CSS ------------------------
-*/
-.comment
-{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
-    padding: 1rem;
-}
-legend
-{
-    padding: 0 1rem;
-    font:1.5rem 'arial';
-    grid-column: 1/-1;
-}
-.fld
-{
-    margin: 10px;
-    padding: 10px;
-    font:19px 'calibri';
-    border:2px solid var(--dark);
-}
-.fld:focus
-{
-    border-bottom-color: var(--skyblue);
-}
-textarea
-{
-    grid-column: 1/-1;
-}
-.comment .btn
-{
-    grid-column: 1/-1;
-    margin:10px;
-    font:1rem 'arial';
-    border-radius: 40px;
-}
-.comment .btn:hover
-{
-    box-shadow: 2px 2px 5px var(--blue);
+    font-weight: bold;
 }
 /*
     MAP CSS ----------------------------

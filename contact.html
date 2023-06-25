@@ -1,290 +1,156 @@
 <!DOCTYPE html>
 <!--
-	Mayank All right reserved
-	website 4 : "Master"
-	HTML : ../contact
+-	website-4 "Master"
+-	CopyRight by Master Mayank
+-	Design & Developed by Mayank
+-	HTML : ./contact
 -->
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Mayank</title>
-		<link rel="shortcut icon" href="data/logo.png" type="image/x-icon">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mayank</title>
+	<!--
+		---------
+		| style |
+		---------
+	-->
+	<link rel="shortcut icon" href="data/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--
+		main container ---------------------------------------------------
+	-->
+	<main>
 		<!--
-			main container ---------------------------------------------------
+			==================
+			| header section |-----------------------------------------------
+			==================
 		-->
-		<main>
+		<header id="header"></header>
+		<!--
+			container --------------------------------------------
+		-->
+		<div id="container">
 			<!--
-				header section -----------------------------------------------
+				===================
+				| contact section |
+				===================
 			-->
-			<header id="header">
-				<!-- brand -->
-				<div id="brand_name"> MASTER </div>		
-				<!-- menu button -->
-				<div id="menu_btn"> &#9776; </div>
-				<!-- navbar -->
-				<nav id="nav">
-
-					<a href="index.html"> Home </a>
-
-					<a href="about.html"> About </a>
-
-					<a href="service.html"> Service </a>
-
-					<a href="team.html"> Team </a>
-
-					<a href="profile.html"> Profile </a>
-
-					<a href="contact.html"> Contact </a>
-
-				</nav>
-
-			</header>
-			<!--
-				container section --------------------------------------------
-			-->
-			<div id="container">
-                <!--
-					contact page frame ---------------------------------------
+			<section id="contact">
+				<!--
+					{ menu } ----------
 				-->
-                <div id="contact">
-                    <!--
-                        { menu } ----------
-                    -->
-                    <menu id="menu">
-                        <h3> Contact Us </h3>
-                        <div class="back"> <a href="index.html"> home </a> / contact </div>
-                    </menu>
-					<!--
-						[ contact page ] ---------
-					-->
-                    <div id="contact_page">
-                        <!-- contact us -->
-                        <div class="contact_us">
-                            <!-- number -->
-                            <a href="#">
-                                <div class="cnt">
-                                    <span class="fa solid fa-phone"></span>
-                                </div>
-                                <h6> 9211420420 </h6>
-                            </a>
-                            <!-- mail -->
-                            <a href="#">
-                                <div class="cnt">
-                                    <span class="fa solid fa-envelope"></span>
-                                </div>
-                                <h6> fake@gmailcom </h6>
-                            </a>
-                            <!-- location -->
-                            <a href="#">
-                                <div class="cnt">
-                                    <span class="fa solid fa-map-marker-alt"></span>
-                                </div>
-                                <h6> #420 Sector-13, Chandigarh pincode 160102 at India </h6>
-                            </a>
-                            <!-- social -->
-                            <h3> social circle </h3>
-                            <div class="center">
-								<!-- facebook -->
-								<a href="#" class="cnt">
-									<span class="fa brands fa-facebook-f" ></span>
-								</a>
-								<!-- telegram -->
-								<a href="#" class="cnt">
-									<span class="fa brands fa-telegram" ></span>
-								</a>
-								<!-- twitter -->
-								<a href="#" class="cnt">
-									<span class="fa brands fa-twitter" ></span>
-								</a>
-								<!-- whatsapp -->
-								<a href="#" class="cnt">
-									<span class="fa brands fa-whatsapp" ></span>
-								</a>
-								<!-- instagram -->
-								<a href="#" class="cnt">
-									<span class="fa brands fa-instagram" ></span>
-								</a>
+				<menu id="menu">
+					<h3> Contact Us </h3>
+					<div class="back"> <a href="index.html"> home </a> / contact </div>
+				</menu>
+				<!--
+					----------------
+					[ contact page ] ---------
+					----------------
+				-->
+				<div id="contact_page">
 
-							</div>
+					<div class="contact_us">
+						<div> <span class="fa solid fa-map"></span> Map Location </div>
+						<a href="https://goo.gl/maps/B8ha7MwDLxskZ7Kq6" target="_blank">https://goo.gl/maps/B8ha7MwDLxskZ7Kq6</a>
+					</div>
+					<div class="contact_us">
+						<div> <span class="fa solid fa-globe"></span> Website Link </div>
+						<a href="https://mayankdevil.github.io/website-4/" target="_blank">https://mayankdevil.github.io/website-4/</a>
+					</div>
+					<div class="contact_us">
+						<div> <span class="fa solid fa-envelope"></span> Email ID </div>
+						<a href="mailto:fake@gmail.com" target="_blank">fake@gmail.com</a>
+					</div>
+					<div class="contact_us">
+						<div> <span class="fa solid fa-phone" target="_blank"></span> Phone Number </div>
+						<a href="tel:+9211420420">9211420420</a>
+					</div>
 
-                        </div>
-                        <!-- comment -->
-						<form action="#" class="comment">
-							
-							<legend> We're Here To Listen You :) </legend>
-							
-							<input type="text" name="name" class="fld" placeholder="&#9998; Your Good Name">
+					<h3> Social Network </h3>
 
-							<input type="email" name="mail" class="fld" placeholder="&#9993; Your Email Address">
-
-							<input type="text" name="subject" class="fld" placeholder="&#9733; Subject">
-
-							<textarea name="message"class="fld" placeholder="&#9998; Message"></textarea>
-
-							<input type="reset" name="submit" value="Click to Send Message &#9010;" class="btn">
-
-						</form>
-	
-                    </div>
-					<!-- map -->
-					<iframe src="https://maps.google.com/0:0:0:0" frameborder="0" id="location"></iframe>
-
-                </div>
-				<!-- contact end -->
-			</div>
-			<!--
-				footer section -----------------------------------------------
-			-->
-			<footer id="footer">
-				<!-- newletter -->
-				<div id="newsletter">
-					<!-- left frame -->
-					<div class="left">
-
-						<h4> Our NewsLetter </h4>
-
-						<div class="em"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.Veritatis blanditiis quas architecto atque voluptatibus cumque. </div>
+					<div id="socail_contact">
+						<!-- facebook -->
+						<a href="#" class="" target="_blank">
+							<span class="fa brands fa-youtube" ></span>
+						</a>
+						<!-- telegram -->
+						<a href="#" class="" target="_blank">
+							<span class="fa brands fa-telegram" ></span>
+						</a>
+						<!-- twitter -->
+						<a href="#" class="" target="_blank">
+							<span class="fa brands fa-hackerrank" ></span>
+						</a>
+						<!-- whatsapp -->
+						<a href="#" class="" target="_blank">
+							<span class="fa brands fa-linkedin" ></span>
+						</a>
+						<!-- instagram -->
+						<a href="#" class="" target="_blank">
+							<span class="fa brands fa-github"></span>
+						</a>
 
 					</div>
-					<!-- right frame -->
-					<div class="right">
 						
-						<form action="#">
-							<input type="email" name="email" id="email_fld" placeholder="Your Email Address">
-							<input type="submit" value="Subscribe" id="email_btn">
-						</form>
 					
-					</div>
-
-				</div>
-				<!-- base links -->
-				<div id="baselink">
-					<!-- information -->
-					<div class="link_box">
-
-						<h5> Information </h5>
-
-						<div class="links">
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Experiantion </a>
-
-							<a href="#"> <span class="ent1"> &#10097; </span> About </a>
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Service </a>
+					<!-- comment 
+					<form action="#" class="comment">
+						
+						<input type="text" name="name" class="fld" placeholder="&#9998; Your Good Name">
 							
-							<a href="#"> <span class="ent1"> &#10097; </span> Terms </a>
+						<input type="email" name="mail" class="fld" placeholder="&#9993; Your Email Address">
 
-							<a href="#"> <span class="ent1"> &#10097; </span> Policy </a>
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Privacy </a>
-
-						</div>
-
-					</div>
-					<!-- service -->
-					<div class="link_box">
-
-						<h5> Our Services </h5>
-
-						<div class="links">
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Web Development </a>
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Database Management </a>
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Software Developement </a>
-							
-							<a href="#"> <span class="ent1"> &#10097; </span> Web Server </a>
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Web Hosting </a>
-
-							<a href="#"> <span class="ent1"> &#10097; </span> Software Security </a>
-
-						</div>
-
-					</div>
-					<!-- contact -->
-					<div class="link_box">
-
-						<h5> Contact Us </h5>
-
-						<div class="links">
-
-							<span class="ent1"> Location </span>
-
-							<a href="#"> #420 Sector-13, Chandigarh pincode 160102 at India  </a>
-
-							<span class="ent1"> Number </span>
-
-							<a href="tel:+9211420420"> 9211420420 </a>
-
-							<span class="ent1"> Email </span>
-							
-							<a href="mailto:fack@gmailcom"> fack@gmailcom </a>
-
-						</div>
-
-					</div>
-					<!-- company -->
-					<div class="link_box">
-
-						<h5> About Company </h5>
-
-						<div class="links">
-
-							<div class="em"> Since 2021 stand Indian private cyber company &nbsp; MASTER &nbsp; founded by Mayank and other team member. </div>
-
-							<!-- social media -->
-							<div class="social">
-								<!-- facebook -->
-								<a href="#" class="media">
-									<span class="fa brands fa-facebook-f" ></span>
-								</a>
-								<!-- telegram -->
-								<a href="#" class="media">
-									<span class="fa brands fa-telegram" ></span>
-								</a>
-								<!-- twitter -->
-								<a href="#" class="media">
-									<span class="fa brands fa-twitter" ></span>
-								</a>
-								<!-- whatsapp -->
-								<a href="#" class="media">
-									<span class="fa brands fa-whatsapp" ></span>
-								</a>
-								<!-- instagram -->
-								<a href="#" class="media">
-									<span class="fa brands fa-instagram" ></span>
-								</a>
-							</div>
-
-						</div>
-
-					</div>
-
+						<select name="subject" class="fld">
+							<option value="1"> Comment </option>
+							<option value="2"> Query </option>
+							<option value="3"> Information </option>
+							<option value="4"> Hire us </option>
+							<option value="5"> Work Offer </option>
+							<option value="6"> Meeting </option>
+						</select>
+						
+						<textarea name="message"class="fld" placeholder="&#9998; Message"></textarea>
+						
+						<input type="reset" name="submit" value="Click to Send Message &#10097" class="btn">
+						
+					</form>
+					-->
 				</div>
-				<!-- copyright -->
-				<div id="copy_right">
-				
-					<div class="copy"> &copy; CopyRight <a href="#"> MASTER </a> All Right Reserved | </div>
-				
-					<div class="right"> &nbsp; Designed by <a href="#"> Mayank </a> </div>
+				<!--
+					------------
+					[ location ] -----------
+					------------
+				-->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6861.822326897356!2d76.81661169186694!3d30.692775498413965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fecb23dac157d%3A0x672b396b308e0553!2sVikas%20Nagar%2C%20Chandigarh%2C%20Haryana%20160102!5e0!3m2!1sen!2sin!4v1687706982680!5m2!1sen!2sin"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  frameborder="0" id="location"></iframe>
 
-				</div>
-
-			</footer>
-
-		</main>
+			</section>
+			<!-- contact end -->
+		</div>
 		<!--
-			script file ------------------------------------------------------
+			==================
+			| footer section |-----------------------------------------------
+			==================
 		-->
-		<script src="js/script.js"></script>
+		<footer id="footer"></footer>
 
-	</body>
+	</main>
+	<!--
+		----------
+		| script |
+		----------
+	-->
+	<script src="js/layout/header.js"></script>
+	<script src="js/layout/footer.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
 </html>
 <!-- the end -->

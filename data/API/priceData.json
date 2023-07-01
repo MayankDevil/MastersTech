@@ -1,0 +1,40 @@
+{
+    "warning" : "company price charges for service not for royality and selled",
+    "url" : "https://mayankdevil.github.io/website-0/",
+    "detail" : "Master Company Price Data",
+    "pice_Data" : [
+        {
+            "url" : "#",
+            "title" : "Business",
+            "charge" : 100,
+            "time" : "per/month",
+            "offer" : [
+                "Repdevelope and stand web.",
+                "Full project stablise.",
+                "Develope full web or software."
+            ]
+        },
+        {
+            "url" : "#",
+            "title" : "Standered",
+            "charge" : 50,
+            "time" : "per/month",
+            "offer" : [
+                "Repdevelope and stand web.",
+                "Full project stablise.",
+                "Develope full web or software."
+            ]
+        },
+        {
+            "url" : "#",
+            "title" : "Basic",
+            "charge" : 10,
+            "time" : "per/month",
+            "offer" : [
+                "Repdevelope and stand web.",
+                "Full project stablise.",
+                "Develope full web or software."
+            ]
+        }
+  ]
+}

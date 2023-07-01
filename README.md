@@ -12,9 +12,9 @@
 
 - Responsive : Ture
 
-- TecStack : { HTML | CSS | JavaScript }
+- TecStack : { HTML | CSS | JavaScript | JSON }
 
-- Thanks : { VSCode | GitHub | Fontawesome | GoogleFont }
+- Thanks : { VSCodium | GitHub | Fontawesome | GoogleFont | GoogleMap | Unplash }
 
 - Work : Self
 

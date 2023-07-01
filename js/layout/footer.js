@@ -113,26 +113,27 @@ try
 
                          <!-- social media -->
                          <div class="social">
-                              <!-- facebook -->
+
                               <a href="#" class="media">
-                                   <span class="fa brands fa-facebook-f" ></span>
+                                   <span class="fa brands fa-github" ></span>
                               </a>
-                              <!-- telegram -->
+
+                              <a href="#" class="media">
+                                   <span class="fa brands fa-linkedin" ></span>
+                              </a>
+                              
                               <a href="#" class="media">
                                    <span class="fa brands fa-telegram" ></span>
                               </a>
-                              <!-- twitter -->
+
                               <a href="#" class="media">
-                                   <span class="fa brands fa-twitter" ></span>
+                                   <span class="fa brands fa-youtube" ></span>
                               </a>
-                              <!-- whatsapp -->
-                              <a href="#" class="media">
-                                   <span class="fa brands fa-whatsapp" ></span>
-                              </a>
-                              <!-- instagram -->
+                              <!--
                               <a href="#" class="media">
                                    <span class="fa brands fa-instagram" ></span>
                               </a>
+                              -->
                          </div>
 
                     </div>

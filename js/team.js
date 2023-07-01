@@ -20,14 +20,16 @@ try
      */
      function team_member(team_Data,index)
      {
-          return (`<div class="team_member">
+          return (
+               `<div class="team_member">
                     <img src="data/team/${team_Data[index].image}" alt="hritik" class="member">
                     <div class="member_detail">
                          <h4> ${team_Data[index].name} </h4>
                          <div class="em">${(team_Data[index].qoute == null)? "wait i am thinking!" : team_Data[index].qoute}</div>
                          <a href="${team_Data[index].portfolio}" class="profile_btn">  <span> &#9729; </span> Online ProtFolio </a>
                     </div>
-               </div>`)
+               </div>`
+          )
      }
 
      /*

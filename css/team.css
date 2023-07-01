@@ -52,7 +52,7 @@
     position: absolute;
     bottom: 1rem;
     width: 80%;
-    padding: 0.5rem;
+    padding: 1rem 0;
     text-align: center;
     color: var(--white);
     font:1rem var(--write);
@@ -63,10 +63,11 @@
 .profile_btn::first-letter
 {
     margin: 1rem 0.5rem;
-    color:var(--blue);
+    color:var(--white);
 }
 .profile_btn:hover
 {
+    background:var(--blue);
 }
 /*
     THE END ============================

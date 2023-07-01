@@ -24,11 +24,6 @@
         left: 0;
         z-index: 10;
     }
-    /* TEAM */
-    #team_page
-    {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }
 /*
     992PX SCREEN CSS -------------------------------
@@ -87,7 +82,7 @@
     /* TEAM */
     #team_page
     {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: 1fr 1fr 1fr !important;
     }
     /* SERVICE */
     #service_page
@@ -200,7 +195,7 @@
     /* TEAM */
     #team_page
     {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr) !important;
     }
     /* SERVICE */
     #service_page
@@ -320,7 +315,7 @@
     #team_page
     {
         grid-gap: 2rem;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
     /* SERVICE */
     #service_page

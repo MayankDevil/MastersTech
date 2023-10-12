@@ -109,7 +109,7 @@ try
 
                     <div class="links">
 
-                         <div class="em"> Since 2021 stand Indian private cyber company &nbsp; MASTER &nbsp; founded by Mayank and other team member. </div>
+                         <div class="em"> Since 2021 stand Indian private cyber company &nbsp; MasterTech &nbsp; founded by Mayank and other team member. </div>
 
                          <!-- social media -->
                          <div class="social">

@@ -14,7 +14,7 @@ try
 	document.getElementById("header").innerHTML = 
 	(
 		`<!-- brand -->
-		<div id="brand_name"> MASTER </div>
+		<div id="brand_name"> MasterTech </div>
 
 		<!-- menu button -->
 		<div id="menu_btn"> &#9776; </div>

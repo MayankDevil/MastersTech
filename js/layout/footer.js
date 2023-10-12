@@ -143,7 +143,7 @@ try
           <!-- copyright -->
           <div id="copy_right">
           
-               <div class="copy"> <a href="#"> MASTER </a>  &copy; All Right Reserved &nbsp; | </div>
+               <div class="copy"> <a href="#"> MasterTech </a>  &copy; All Right Reserved &nbsp; | </div>
                <div class="right"> &nbsp; Developed by <a href="https://mastermayank.w3spaces.com"> Mayank </a> </div>
 
           </div>`

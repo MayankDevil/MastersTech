@@ -1,0 +1,87 @@
+/*
+-	website-4 "Master"
+-	CopyRight by Master Mayank
+-	Design & Developed by Mayank
+-	CSS : css/layout
+*/
+/*
+    MAIN CSS ---------------------------
+*/
+#main
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+/*
+    CONTAINER CSS ----------------------
+*/
+#container
+{
+    width: 100%;
+}
+#goto_btn
+{
+    position: fixed;
+    right: 2vh;
+    bottom: 2vh;
+    z-index: -5;
+    padding:0.5rem 0.8rem;
+    font:bolder 1.5rem 'arial';
+    color:var(--white);
+    background:var(--skyblue);
+    border-radius: 10px;
+}
+#goto_btn:hover
+{
+    background:var(--lblue) ;
+}
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hidden
+{
+    display: none;
+}
+/*
+    MENU CSS --------------------------
+*/
+#menu
+{
+    background:var(--blue9);
+}
+#menu .container
+{
+    padding: 0.1rem  2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu h3
+{
+    padding: 0.5rem;
+}
+.back
+{
+    padding: 1rem;
+    font-size:1rem;
+}
+.back > a
+{
+    display: inline-block;
+    color:var(--blue5);
+}
+.back > a:hover
+{
+    color:var(--lblue);
+}
+
+
+
+
+/*
+    THE END ============================
+*/

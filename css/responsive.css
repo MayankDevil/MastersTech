@@ -1,0 +1,256 @@
+/*
+-	website-4 "Master"
+-	CopyRight by Master Mayank
+-	Design & Developed by Mayank
+-	CSS : css/responsive
+*/
+
+/*
+    1200PX SCREEN CSS ------------------------------
+*/
+@media (max-width: 1200px)
+{
+}
+/*
+    992PX SCREEN CSS -------------------------------
+*/
+@media (max-width: 992px)
+{
+    #header
+    {
+        position: fixed;
+        z-index: 15;
+        top: 10%;
+        left: calc(50% - 500px/2);
+        width: 500px;
+        background:var(--blue5) !important;
+        border-radius: 1rem;
+    }
+    #header .container
+    {
+        display:grid;
+        justify-content: stretch;
+    }
+    #brand_name
+    {
+        font-size: large;
+        font-weight: normal;
+        color:var(--blue1);
+    }
+    #toggle_btn
+    {
+        display: inline-block;
+        position: absolute;
+        z-index: 16;
+        top: 3px;
+        right: 2px;
+    }
+    #set_btn
+    {
+        display: inline-block;
+    }
+    #nav
+    {
+        display: block !important;
+        padding:0 !important;
+        margin: 2rem 1rem; 
+    }
+    #nav > a
+    {
+        display: block;
+        text-align: right;
+        color:var(--blue9);
+        font-weight: bold;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+    #nav > a:hover
+    {
+        background: var(--dark);
+    }
+    #fact .container
+    {
+        padding: 5rem 5rem;
+        grid-gap:10px;
+    }
+    .fact_box
+    {
+        padding: 1rem;
+        background: var(--blue0) !important;
+        border-radius: 1rem;
+    }
+    #team_page .container
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+	#service_page .container
+	{
+		grid-gap:1rem;
+		grid-template-columns: repeat(3,1fr);
+	}
+	#vedio_frame
+	{
+		width: 90%;
+	}
+    #baselink .container
+    {
+        grid-template-columns: 1fr 1fr 1fr !important;
+        padding:1rem 0;
+    }
+    #baselink .link_box:last-child
+    {
+        grid-column: 1/-1;
+    }
+}
+/*
+    768PX SCREEN CSS -----------------------------------
+*/
+@media (max-width: 768px)
+{
+    strong
+    {
+        width: 100% !important;    
+        line-height:2rem;
+        font-size:1rem;
+        font-weight: normal;
+        color:var(--gray);
+    }
+    #fact .container
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    #team_page .container
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+	#service_page .container
+	{
+		grid-template-columns: repeat(2,1fr);
+	}
+	#vedio_frame
+	{
+		grid-template-columns:1fr;
+	}
+    #feature .box
+    {
+        position: relative;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        padding:1rem;
+    }
+    #feature .image
+    {
+        position: absolute;
+        left:10px;
+        width: 40%;
+    }
+    #feature .title
+    {
+        grid-column: 2/-1;
+        padding:2rem 3rem;
+    }
+    #baselink .container
+    {
+        grid-template-columns: 1fr 1fr !important;
+        padding:1rem 0;
+    }
+    #baselink .link_box:last-child
+    {
+        grid-column: 2/3;
+    }
+}
+/*
+    576PX SCREEN CSS -----------------------------------
+*/
+@media (max-width: 576px)
+{
+    #header
+    {
+        position: fixed;
+        width: 90%;
+        top: 10%;
+        left: 5%;
+        background:var(--blue5) !important;
+        border-radius: 1rem;
+    }
+    #fact .container
+    {
+        padding: 3rem 1rem;
+    }
+    #team_page .container
+    {
+        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+    }
+	#service_page .container
+	{
+		grid-template-columns: repeat(1,1fr);
+		padding:3rem 1rem;
+	}
+	#whyus
+	{
+		grid-template-columns:1fr;
+	}
+	.vedio_detail
+	{
+		display:grid;
+	}
+	.fa_vedio
+	{
+		padding: 1rem;
+		display: flex;
+		justify-content:flex-end;
+		margin-bottom:-3rem;
+	}
+    #feature .box
+    {
+        grid-gap:0;
+        position: relative;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr;
+        margin: 0 auto;
+        padding:2rem;
+    }
+    #feature .image
+    {
+        position: static;
+        padding: 3rem;
+        width: 100%;
+        border-right:3px solid var(--gray);
+    }
+    #feature .title
+    {
+        grid-column: 1/-1;
+        grid-row:2/-1;
+        padding:2rem 3rem;
+        border:3px solid var(--gray);
+        border-top:none;
+        border-radius: 0 0 2rem 2rem;
+    }
+    #baselink .container
+    {
+        grid-template-columns: 1fr!important;
+        padding:1rem 0;
+    }
+    #baselink .link_box
+    {
+        padding: 0 1rem;
+        grid-column: 1/-1 !important;
+    }
+}
+/*
+    350PX SCREEN CSS -----------------------------------
+*/
+@media (max-width: 350px)
+{
+    #fact .container
+    {
+        grid-gap:1rem;
+        grid-template-columns: 1fr;
+        padding: 3rem 1rem;
+    }
+}
+/*
+    THE END ============================
+*/

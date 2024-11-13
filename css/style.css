@@ -1,0 +1,985 @@
+/*
+-	website-4 "Master"
+-	CopyRight by Master Mayank
+-	Design & Developed by Mayank
+-	CSS : css/style
+*/
+
+/*
+    ----------------------
+    | Bootstrap ICON URL |
+    ----------------------
+*/
+@import url(bootstrap-icons.min.css);
+/*
+    ---------------------
+    | SECTION CSS SHEET |
+    ---------------------
+*/
+@import "service.css";
+/* @import "responsive.css"; */
+
+*
+{
+    user-select:text;
+    margin: 0;
+    padding: 0;
+    font-family:'Dosis',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color:var(--black);
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    --blue0:#f1f6fe;
+    --blue1:#031633;
+    --blue2:#052c65;
+    --blue3:#084298;
+    --blue4:#0a58ca;
+    --blue5:#0d6efd;
+    --blue6:#3d8bfd;
+    --blue7:#6ea8fe;
+    --blue8:#9ec5fe;
+    --blue9:#cfe2ff;
+    --green1:#d1e7dd;
+    --green5:#198754;
+    --red1:#f8d7da;
+    --red5:#dc3545;
+    --dark:#212529;
+    --light:#f8f9fa;
+    --black:#000;
+    --white:#fff;
+    --gray:#adb5bd;
+}
+
+::selection
+{
+    color:var(--blue9);
+    background: var(--black);
+}
+::placeholder
+{
+    color:var(--lblue);
+}
+::-webkit-scrollbar
+{
+    width: 0.5rem;
+    background: var(--blue);
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--light);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: var(--skyblue);
+}
+
+
+/*
+    comman css -------------------------
+*/
+.container
+{
+    max-width:1200px;
+    margin: 0 auto;
+}
+.bg
+{
+    background: linear-gradient(rgba(11,33,45,0.5),var(--blue1));
+    backdrop-filter: blur(3px);
+}
+.bi
+{
+    margin: 0;
+    padding: 0.5rem;
+    font-size: auto;
+    color:var(--blue1);
+}
+
+.text-light
+{
+    padding:1rem;
+    line-height:2rem;
+    color:var(--blue0);
+}
+
+h1
+{
+    padding:3rem 1rem;
+    font-weight:normal;
+    font-size:xx-large;
+    color:var(--light);
+}
+h2
+{
+}
+h3
+{
+    font-size:1.2rem;
+}
+h4
+{
+    font:2rem;
+    color:var(--black);
+}
+h5
+{
+    padding: 2rem 1rem;
+    font-weight:normal;
+    font-size:1.1rem;
+    color:var(--blue6);
+}
+h6
+{
+    padding: 1rem;
+    line-height:2rem;
+    font-size:1rem;
+    font-weight: normal;
+    color:var(--blue2);
+}
+
+p
+{
+    padding: 1rem;
+    line-height:2rem;
+    font-size:1rem;
+    color:var(--dark);
+}
+
+b
+{
+    font-weight:bolder;
+    color:var(--black);
+}
+
+strong
+{
+    width:700px;
+    line-height:2rem;
+    letter-spacing:1px;
+    font-size:1.2rem;
+    color:var(--gray);
+}
+
+a
+{
+    display:inline-block;
+    color:var(--blue1);
+}
+a:hover
+{
+    color:var(--black);
+}
+
+#explore_btn
+{
+    display: inline-block;
+    margin: 3rem auto;
+    padding: 1rem 1.5rem;
+    font-size:medium;
+    font-weight:normal;
+    color:var(--light);
+    border:1px solid var(--blue5);
+    border-radius: 1.5rem;
+}
+#explore_btn:hover
+{
+    transition: all linear 0.3s;
+    background:var(--blue5);
+    border-radius:5px;
+    transform:scale(1.1);
+}
+
+#set_btn
+{
+    position: fixed;
+    z-index: 10;
+    right: 5vw;
+    bottom: 5vh;
+    display: none;
+    padding: 5px;
+    font-size: 1.7em;
+    color: var(--white);
+    background: var(--blue5);
+    border-radius: 10px;
+    border:1px solid var(--blue5);
+}
+#set_btn:hover
+{
+    color:var(--blue5);
+    background: transparent;
+}
+.activeNav
+{
+    display:none;
+    opacity: 0;
+}
+
+/*
+    header css -------------------------
+*/
+
+#header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 15 ;
+    background: var(--blue1);
+    overflow: hidden;
+}
+#header .container
+{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* brandname */
+
+#brand_name
+{
+    display:inline-block;
+    padding: 1rem 2rem;
+    font-size:1rem;
+    font-weight:bold;
+    color:var(--blue9);
+}
+#toggle_btn
+{
+    display: none;
+    font-size:1.5rem;
+    padding: 10px;
+    color:var(--light);
+    border-radius: 0 1rem;
+}
+#toggle_btn:hover
+{
+    background: var(--dark);
+}
+
+/* nav */
+
+#nav
+{
+    display: flex;
+    padding: 0 2rem;
+}
+#nav a
+{
+    display:inline-block;
+    padding: 1rem;
+    color:var(--light);
+    border-bottom: 3px solid  transparent;
+}
+#nav a:hover,
+#nav a:active
+{
+    color:var(--blue7);
+    border-color: var(--blue8);
+}
+
+/*
+    footer css -------------------------
+*/
+
+#footer
+{
+    background: var(--light);
+}
+
+/* newsletter */
+
+#newsletter
+{
+    background: rgb(207, 226, 255, 0.5) url(../data/us.jpg) no-repeat;
+    background: var(--white);
+    background-size: 100% 100%;
+    background-blend-mode:overlay;
+}
+#newsletter .row
+{
+    margin:1rem 1rem;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid var(--lblue);
+    background:var(--light);
+}
+#newsletter form
+{
+    width: 80%;
+    margin:3rem auto;
+    display: flex;
+    background: transparent;
+    border:1px solid var(--blue5);
+    border-radius:1rem;
+}
+#email_fld
+{
+    width:70%;
+    padding: 0.5rem;
+    font:17px 'arial';
+    color: var(--blue6);
+    background: transparent;
+    border-radius: 1rem 0 0 1rem;
+}
+#email_fld::placeholder
+{
+    color:var(--blue5);
+}
+#email_btn
+{
+    width:30%;
+    padding: 0.5rem;
+    font:17px 'arial';
+    color:var(--white);
+    background: var(--blue5);
+    border-radius: 0 1rem 1rem 0;
+}
+#email_btn:hover
+{
+    color:var(--blue1);
+    background: var(--blue8);
+}
+
+/* baselinks */
+
+#baselink .container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:1rem 0;
+}
+.link_box
+{
+    padding:2rem 0;
+    /* border:1px solid red; */
+}
+.links
+{
+    display: grid;
+}
+.links b
+{
+    padding:1rem;
+}
+.links a
+{
+    padding:1.5rem 1rem;
+    letter-spacing: 1px;
+    font-size:smaller;
+    color: var(--dark);
+    opacity: 0.8;
+}
+.links a:hover
+{
+    color:var(--blue1);
+    opacity: 1;
+}
+.links .ent1
+{
+    color:var(--gray);
+}
+.links a:hover .ent1
+{
+    color:var(--blue7);
+}
+
+/* social media */
+
+.social
+{
+    display: block;
+    padding:1rem;
+}
+.social .media
+{
+    padding:5px;
+}
+.social .media .bi
+{
+    display:inline-block;
+    font-size: 1.3em;
+    color:var(--blue5);
+    background: transparent;
+    border-radius: 5px;
+    opacity: 1;
+    border:1px solid var(--blue5);
+}
+.social .media .bi:hover
+{
+    color:var(--white);
+    background: var(--blue5);
+    box-shadow: 0 0  5px var(--blue1);
+}
+
+
+/* copyright */
+
+#copyRight
+{
+    background:var(--black);
+}
+#copyRight .container
+{
+    padding:2rem 1rem;
+    color:var(--white);
+}
+
+#copyRight a
+{
+    font-weight:bold;
+    color:var(--blue8);
+}
+#copyRight a:hover
+{
+    font-size:1rem;
+}
+
+/*
+    WELCOME CSS -------------------------
+*/
+
+#welcome
+{
+    background: url(../data/w3.jpg) no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#lonch
+{
+    min-height: 100vh;
+    padding: 2rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+#logo
+{
+    margin:atuo;
+}
+#logo img
+{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/*
+    FACT CSS ---------------------------
+*/
+
+#fact .container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 5rem;
+}
+.fact_icon .bi
+{
+    padding: 1rem;
+    font-size: 2rem;
+    color:var(--blue7);
+    border-radius:5px;
+}
+.fact_box:hover .bi
+{
+    color:var(--lblue);
+}
+.fact_box
+{
+    padding:5rem 0.5rem;
+    text-align: center;
+}
+.count_number
+{
+    padding: 0.5rem 1rem;
+    font-size: 3rem;
+    color:var(--blue1);
+}
+
+/*
+    VEDIO PAGE CSS ----------------------
+*/
+#vedio_page
+{
+    background: var(--light);
+    padding: 5rem 0;
+}
+/*
+    VEDIO FRAME CSS
+*/
+#vedio_frame
+{
+    width: 80%;
+    margin: 0 auto;
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px var(--gray);
+    background:var(--white);
+}
+#vedio
+{
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+}
+#vedio img
+{
+    width: 100%;
+    height: 100%;
+    border-radius:5px;
+    object-fit: cover;
+}
+#vedio img:hover
+{
+    filter:blur(3px);
+}
+#vedio #play .bi
+{
+    position:absolute;
+    top:15px;
+    left:15px;
+    font-size:3rem;
+    background: rgba(255, 255, 255,0.8);
+}
+#vedio:hover #play .bi
+{
+    transition:all linear 0.5s;    
+    top:0;
+    left:0;
+    display:grid;
+    place-content:center;
+    width:100%;
+    height:100%;
+    color:var(--blue6);
+}
+/*
+    WHY US CSS
+*/
+#whyus
+{
+    padding: 1rem;
+    display: grid;
+}
+.fa_vedio
+{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.vedio_detail
+{
+    display:flex;
+}
+.fa_vedio .bi
+{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: var(--blue0);
+    border-radius:5px;
+}
+.vedio_detail:hover .bi
+{
+    background: var(--blue9);
+}
+/*
+    TEAM CSS ---------------------------
+*/
+#team_page .container
+{
+    display: grid;
+    grid-gap:1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5rem 2rem;
+}
+.team_member
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    background:var(--blue0);
+    box-shadow: 2px 2px 5px var(--gray);
+    border-radius: 5px;
+}
+.member
+{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 1 / 1; */
+    object-fit: 100% 100%;
+    /* border-radius: 50%; */
+}
+.member_detail
+{
+    position:absolute;
+    z-index: 5;
+    top: -100%;
+    left:0;
+    width: 100%;
+    height: 90%;
+    background: var(--dark);
+    border-bottom: 1px double var(--blue1);
+    clip-path: polygon(0%0%, 0%100%, 100%85%, 100%0%);
+}
+.member_detail :is(b,p)
+{
+    padding: 10px 20px;
+    padding-bottom: 1rem;
+    line-height: 4rem;
+    font-size: 1rem;
+    color:var(--blue0);
+    border-bottom:1px solid var(--blue6);
+}
+.member_detail p
+{
+    line-height: 2rem;
+    font-size: small;
+    border-color:transparent;
+}
+.member:hover .member_detail,
+.team_member:hover .member_detail
+{
+    transition: all 0.5s linear;
+    top:0;
+}
+
+/* profile button */
+
+.profile_btn
+{
+    position: absolute;
+    z-index: 6 ;
+    bottom:5px;
+    right:0;
+    /* width: 80%; */
+    /* margin: 5%; */
+    padding: 10px 20px;
+    text-align: center;
+    color:var(--light);
+    background: var(--blue7);
+    border-radius: 10px 0 0 10px;
+}
+.bi-globe-asia-australia
+{
+    font-size: 1em;
+    color: var(--blue0);
+}
+.profile_btn:hover
+{
+    transition: all 0.2s linear;
+    padding: 10px;
+    color:var(--light);
+    background: var(--blue6);
+}
+
+/* join us */
+
+#join
+{
+    text-align: center;
+    border-radius: 1rem;
+    background: var(--light);
+}
+#join:hover
+{
+    box-shadow: 0 0 10px var(--blue1);
+}
+#join .border
+{
+    width: 60%;
+    margin: 2rem auto;
+    border:1px solid var(--blue5);
+}
+#join .center
+{
+    text-align: center !important;
+}
+
+.bi-person-fill-add
+{
+    display: inline-block;
+    width: 70px;
+    margin:2rem auto;
+    padding: 10px;
+    font-size: 3em;
+    color:var(--light);
+    background: var(--blue6);
+    border-radius: 1rem;
+}
+
+
+/*
+    FEATURE CSS ------------------------
+*/
+#feature
+{
+    padding-bottom:3rem;
+}
+h3
+{
+    padding: 3rem 1rem;
+    font-size: 1rem;
+    font-weight:normal;
+    color:var(--blue);
+}
+#feature .box
+{
+    display: grid;
+    grid-gap:2rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+#feature .image
+{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#feature .title
+{
+    padding: 2rem;
+    word-spacing:4px;
+    line-height:2rem;
+    font-size: 1.2rem;
+    color:var(--black);
+    opacity:0.8;   
+    border: 3px solid var(--gray);
+    border-left: none;
+    border-radius: 0 2rem 2rem 0;
+}
+/*
+    DETAIL CSS -------------------------
+*/
+#detail
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#tec
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(30%0%, 0%100%, 100%100%, 100%0%);
+    filter:grayscale(9);
+}
+#detail_box
+{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+ul li
+{
+    line-height: 2rem;
+    list-style: none;
+}
+ul li::first-letter
+{
+    padding: 1rem;
+    color:var(--dskyblue);
+}
+
+/*
+    PRICE CSS ---------------------------
+*/
+
+#price_page .container
+{
+    display: grid;
+    grid-gap:2rem;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem 1rem 6rem 1rem;
+}
+.price_box
+{
+    display: block;
+    background: var(--light);
+    border-radius: 10px;
+}
+.price_box:nth-child(1)
+{
+    background: var(--blue0);
+}
+.price_box:nth-child(2)
+{
+    background: var(--blue9);
+}
+.price_box:hover
+{
+    box-shadow: 0 0 20px var(--gray);
+}
+.price_box .title
+{
+    width: 100px;
+    margin: 0 auto 10px 0;
+    padding: 10px;
+    font-size:1rem;
+    color:var(--light);
+    background: var(--dark);
+    border-radius: 10px 10px 10px 0;
+}
+.price_box .amount
+{
+    margin:3rem auto;
+    text-align: center;
+    font-size: 5rem;
+    color:var(--blue1)
+}
+.price_box .amount sub
+{
+    font-size: 1rem;
+    color: var(--dark);
+}
+.price_box .option
+{
+    margin:2rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--gray);
+}
+ol li
+{
+    list-style: none;
+    text-align: left;
+    line-height: 3rem;
+    color:var(--dark);
+}
+.bi-check2-circle
+{
+    display: inline-block;
+    color:var(--green5);
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+/*
+    POLICY CSS -------------------------
+*/
+
+#policy
+{
+    width: 80%;
+    margin: 3rem auto;
+}
+#policy a
+{
+    color:var(--blue3);
+}
+.btn_grp
+{
+    padding: 1rem;
+}
+.btn
+{
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    background:var(--blue6);
+    border-radius: 5px;
+}
+.btn_grp .btn:hover
+{
+    background: var(--blue7);
+}
+
+/*
+    FAQ CSS ----------------------------
+*/
+
+#faq
+{
+    padding: 3rem 0;
+    /* background:red; */
+}
+#faq > div
+{
+    width:80%;
+    margin: auto;
+}
+details
+{
+    max-width: 700px;
+    margin: 10px auto;
+    background:var(--blue9);
+}
+summary
+{
+    list-style-type: circle;
+    padding: 1rem;
+    color:var(--blue1);
+}
+details > p
+{
+    padding: 2rem;
+}
+
+/*
+    CONTACT CSS ------------------------
+*/
+#contact_page
+{
+    padding: 2rem;
+    margin: 3rem auto;
+}
+.contact_us
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 800px;
+    margin: 10px auto;
+    color:var(--dark);
+    border-radius: 10px;
+    border: 1px solid var(--blue9);
+}
+#contact_page div span
+{
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color:var(--white);
+    background: var(--blue6);
+    border-radius:5px;
+}
+#contact_page div a
+{
+    display: inline-block;
+    padding: 1rem;
+    color:var(--blue6);
+}
+#contact_page a:hover .bi
+{
+    background: var(--blue9);
+}
+/*
+    MAP CSS ----------------------------
+*/
+#location
+{
+    padding: 2rem;
+    width: 100%;
+    height: 80vh;
+}
+
+/*
+    THE END ============================
+*/

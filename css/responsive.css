@@ -93,6 +93,13 @@
 	{
 		width: 90%;
 	}
+    #price_page .container
+    {
+        display: flex;
+        justify-content:space-evenly;
+        flex-wrap: wrap;
+        flex:350px 1 1;
+    }
     #baselink .container
     {
         grid-template-columns: 1fr 1fr 1fr !important;
@@ -249,6 +256,14 @@
         grid-gap:1rem;
         grid-template-columns: 1fr;
         padding: 3rem 1rem;
+    }
+    #feature .box
+    {
+        padding:2rem 1rem;
+    }
+    #feature :is(.image,.title)
+    {
+        padding:10px;
     }
 }
 /*

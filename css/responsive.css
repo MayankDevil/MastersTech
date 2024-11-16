@@ -100,6 +100,10 @@
         flex-wrap: wrap;
         flex:350px 1 1;
     }
+    #social .container .row
+    {
+        border-radius: 3rem;
+    }
     #baselink .container
     {
         grid-template-columns: 1fr 1fr 1fr !important;
@@ -156,6 +160,12 @@
     {
         grid-column: 2/-1;
         padding:2rem 3rem;
+    }
+    #social .container .row
+    {
+        grid-template-columns: 1fr;
+        margin: 2rem;
+        text-align: center;
     }
     #baselink .container
     {
@@ -264,6 +274,12 @@
     #feature :is(.image,.title)
     {
         padding:10px;
+    }
+    #social .container .row
+    {
+        margin:0;
+        padding: 1rem;
+        border-radius: 0;
     }
 }
 /*

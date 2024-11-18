@@ -106,7 +106,7 @@
     }
     #baselink .container
     {
-        grid-template-columns: 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
         padding:1rem 0;
     }
     #baselink .link_box:last-child
@@ -169,12 +169,12 @@
     }
     #baselink .container
     {
-        grid-template-columns: 1fr 1fr !important;
-        padding:1rem 0;
+        grid-template-columns: 1fr !important;
+        padding:0 1rem;
     }
     #baselink .link_box:last-child
     {
-        grid-column: 2/3;
+        grid-row:1/2;
     }
 }
 /*
@@ -255,6 +255,10 @@
         padding: 0 1rem;
         grid-column: 1/-1 !important;
     }
+    #location
+    {
+        height: 50vh;
+    }
 }
 /*
     350PX SCREEN CSS -----------------------------------
@@ -274,6 +278,10 @@
     #feature :is(.image,.title)
     {
         padding:10px;
+    }
+    #footer
+    {
+        padding-top: 0;
     }
     #social .container .row
     {

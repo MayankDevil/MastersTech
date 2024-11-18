@@ -341,7 +341,7 @@ a:hover
 #baselink .container
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding:1rem 0;
 }
 .link_box
@@ -922,54 +922,14 @@ details > p
 {
     padding: 2rem;
 }
-
-/*
-    CONTACT CSS ------------------------
-*/
-#contact_page
-{
-    padding: 2rem;
-    margin: 3rem auto;
-}
-.contact_us
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    width: 800px;
-    margin: 10px auto;
-    color:var(--dark);
-    border-radius: 10px;
-    border: 1px solid var(--blue9);
-}
-#contact_page div span
-{
-    display: inline-block;
-    margin-right: 1rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    color:var(--white);
-    background: var(--blue6);
-    border-radius:5px;
-}
-#contact_page div a
-{
-    display: inline-block;
-    padding: 1rem;
-    color:var(--blue6);
-}
-#contact_page a:hover .bi
-{
-    background: var(--blue9);
-}
 /*
     MAP CSS ----------------------------
 */
 #location
 {
-    padding: 2rem;
     width: 100%;
     height: 80vh;
+    overflow: none;
 }
 
 /*

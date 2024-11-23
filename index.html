@@ -3,99 +3,541 @@
 -	website-4 "Master"
 -	CopyRight by Master Mayank
 -	Design & Developed by Mayank
--	HTML : ./index
+-	HTML : ./index.html
 -->
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mayank</title>
-	<!--
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank</title>
+    <!--
 		---------
 		| style |
 		---------
 	-->
-	<link rel="shortcut icon" href="data/logo.png" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="data/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
-	<!--
+    <!--
 		----------------------------------------------------------------
 		| main container | mother container of all html code
 		----------------------------------------------------------------
 	-->
-	<main>
-		<!--
+    <main>
+        <!--
 			==================
 			| header section |-----------------------------------------------
 			==================
 		-->
-		<header id="header"></header>
-		<!--
-			container --------------------------------------------
+        <header id="header">
+            <div class='container'>
+                <!-- brand -->
+                <a href="#" id="brand_name"> F.Society </a>
+
+                <!-- menu button -->
+                <div id="toggle_btn"> &#9776; </div>
+
+                <!-- navbar -->
+                <nav id="nav">
+
+                    <a href="#"> About </a>
+
+                    <a href="#service_section"> Service </a>
+                    
+                    <a href="#"> Feature </a>
+
+                    <a href="#team_page"> Team </a>
+
+                    <a href="login.html"> Projects </a>
+
+                    <a href="#location"> Contact </a>
+
+                </nav>
+
+            </div>
+        </header>
+        <!--
+			===================
+			| wrapper section | --------------------------------------------
+			=================== 
 		-->
-		<div id="container">
-			<!--
-				========================
-				| introduction section |
-				======================== 
+        <div id="wrapper">
+
+            <!--
+				----------------
+				[ welcome page ] --------
+				----------------
+            -->
+            <section id="welcome">
+                <div class="bg">
+                    <div class="container">
+
+                        <div id="lonch">
+
+                            <!-- <div id="logo">
+                                <img src="data/logo.png" alt="M">
+                            </div> -->
+
+                            <h1> Welcome in the F.Society </h1>
+
+                            <strong> The top one percent of the one percent, the ones in control, the ones who play God
+                                without permission, and now I'm gonna take them down. All of them. </strong>
+
+                            <!--  -->
+
+                            <a href="#fact" id="explore_btn"> Explore More </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!--
+				-------------
+				[ fact page ] ----------
+				-------------
+            -->
+            <section id="fact">
+                <div class="container">
+                    <!-- Project -->
+                    <div class="fact_box">
+
+                        <div class="count_number"> 201 </div>
+
+                        <div class="fact_icon">
+                            <span class="bi bi-folder"></span>
+                        </div>
+
+                        <h6> Success Project </h6>
+
+                    </div>
+                    <!-- client -->
+                    <div class="fact_box">
+
+                        <div class="count_number"> 132 </div>
+
+                        <div class="fact_icon">
+                            <span class="bi bi-emoji-smile"></span>
+                        </div>
+
+                        <h6> Happy Client </h6>
+
+                    </div>
+                    <!-- Team -->
+                    <div class="fact_box">
+
+                        <div class="count_number"> 6 </div>
+
+                        <div class="fact_icon">
+                            <span class="bi bi-person"></span>
+                        </div>
+
+                        <h6> Passionate Team </h6>
+
+                    </div>
+                    <!-- hour -->
+                    <div class="fact_box">
+
+                        <div class="count_number"> 2 </div>
+
+                        <div class="fact_icon">
+                            <span class="bi bi-headset"></span>
+                        </div>
+
+                        <h6> Hour of Support </h6>
+                    </div>
+
+                </div>
+            </section>
+            <!--
+				----------------
+				[ service page ] ---------
+				----------------
 			-->
-			<section id="intro">
-				<!--
-					----------------
-					[ welcome page ] --------
-					----------------
-				-->
-				<div id="welcome"></div>
-				<!--
-					-------------
-					[ fact page ] ----------
-					-------------
-				-->
-				<div id="fact"></div>
-				<!--
-					--------------
-					[ whyus page ] --------
-					--------------
-				-->
-				<div class="hidden">
-					<h2> Why Us ? </h2>
-				</div>
+            <section id="service_page">
+                <div class="container">
 
-				<div id="vedio_page"></div>
-				<!--
-					-----------
-					[ feature ] ------------
-					-----------
-				-->
-				<div id="feature"></div>
+                    <!-- target by js -->
 
-			</section>d
-			<!-- intruduction end -->
-		</div>
-		<!--
+                </div>
+            </section>
+            <!--
+                --------------
+                [ whyus page ] --------
+                --------------
+			-->
+            <section id="vedio_page">
+                <div class="container">
+                    <!-- vedio frame -->
+                    <div id="vedio_frame">
+                        <!-- vedio -->
+                        <a href="#" id="vedio">
+                            <!-- vedio pic -->
+                            <img src="data/vedio.jpg" alt="">
+                            <!-- play button -->
+                            <div id="play">
+                                <span class="bi bi-play"></span>
+                            </div>
+                        </a>
+                        <!-- why us -->
+                        <div id="whyus">
+                            <!-- reason 1 -->
+                            <div class="vedio_detail">
+                                <!-- icon -->
+                                <div class="fa_vedio">
+                                    <span class="bi bi-pencil-fill"></span>
+                                </div>
+                                <!-- explain -->
+                                <div>
+
+                                    <h6> Hard & Smart Work </h6>
+
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas illo
+                                        nulla dolores itaque! Nobis nesciunt maxime molestias architecto saepe. </p>
+
+                                </div>
+                            </div>
+                            <!-- reason 2 -->
+                            <div class="vedio_detail">
+                                <!-- icon -->
+                                <div class="fa_vedio">
+                                    <span class="bi bi-bookmark-fill"></span>
+                                </div>
+                                <!-- explain -->
+                                <div>
+
+                                    <h6> Passionate About Work </h6>
+
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas illo
+                                        nulla dolores itaque! Nobis nesciunt maxime molestias architecto saepe. </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!--
+                -----------
+                [ feature ] ------------
+                -----------
+            -->
+            <section id="feature">
+                <div class="container">
+                    
+                    <!-- feature 1 -->
+                    <div class="box">
+                        <img src="data/feature/4.svg" alt="1" class="image">
+                        
+						<div class="title">
+							<h5>Simplified Experience</h5>
+							<p>Streamline tasks for easier management and faster execution.</p>
+						</div>
+                    </div>
+                    <!-- feature 2 -->
+                    <div class="box">
+                        <div class="title">
+							<h5>Enhanced Performance </h5>
+							<p> Boost speed and efficiency to get more done in less time.</p>
+						</div>
+
+                        <img src="data/feature/2.svg" alt="1" class="image">
+                    </div>
+                    <!-- feature 3 -->
+                    <div class="box">
+                        <img src="data/feature/3.svg" alt="1" class="image">
+
+                        <div class="title">
+							<h5>Fewer Errors </h5>
+							<p>Minimize mistakes with intuitive design and automated checks.</p>						
+						</div>
+                    </div>
+                    <!-- feature 4 -->
+                    <div class="box">
+                        <div class="title">
+							<h5>Global Secure Access     </h5>
+							<p>Access your data securely from anywhere, anytime at the world.</p>
+						</div>
+
+                        <img src="data/feature/1.svg" alt="1" class="image">
+                    </div>
+
+                </div>
+            </section>
+            <!--
+				---------------
+				[ policy page ] -----------
+				---------------
+            -->
+            <section id="policy">
+                <div class="container">
+
+                    <div class="lead">
+                        <h3> Terms & Policy </h3>
+                    </div>
+                    
+                    <p> Lorem ipsum dolor, sit amet <a href="#"> Team </a> consectetur adipisicing elit. Quos voluptate
+                        fugiat blanditiis quam autem nobis, cumque dolores dolorum rem, repudiandae deleniti ipsa maxime. <a
+                        href="#"> Service </a> Nisi obcaecati, possimus, itaque laboriosam eum quisquam omnis impedit
+                        mollitia illo, minima dolores voluptates error. Voluptatum quod reprehenderit earum, aspernatur
+                        expedita animi facere sequi odit! Asperiores, eligendi? </p>
+                    
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, optio veniam nisi cupiditate rerum
+                        iure dicta, nam aut sint quas, similique excepturi. <a href="#"> Fact </a> Quia nemo incidunt
+                        deserunt dolores. Eos, ad necessitatibus! </p>
+                        
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit explicabo aspernatur
+                        distinctio rerum odio vitae ipsa ratione perferendis harum earum fugiat repudiandae minus qui,
+                        consequatur velit. Aperiam assumenda sequi qui. </p>
+                            
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque veniam quaerat harum quidem
+                        distinctio, quae rerum maxime animi, quod magni? Dicta unde labore natus deserunt et aliquam amet
+                        voluptatum harum magni optio, repudiandae placeat, dignissimos sapiente velit adipisci? Temporibus.
+                    </p>
+                    
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet facilis dolore hic repellat incidunt,
+                        quidem corporis magni odio, sunt rem eius quod soluta eum sit odit cum praesentium ut nobis, <a
+                        href="#"> Contact </a> ducimus maiores voluptatem nostrum modi dolores repudiandae? Voluptatem,
+                        eos quia! </p>
+                                    
+                    <h6> Do You Aagree this Term & Policy </h6>
+                    
+                    <div class="btn_grp">
+                        
+                        <button class="btn"> Yes </button>
+                        
+                        <button class="btn"> No </button>
+                        
+                    </div>
+                                    
+                </div>
+            </section>
+            <!--
+                -------------
+                [ team page ] ---------
+                -------------
+            -->
+            <section id="team_page">
+                <div class="container">
+                    <!--
+                        add teamData script
+                        add teamPage script
+                    -->
+                </div>
+            </section>
+            <!--
+				------------
+				[ faq page ] ----------
+				------------
+            -->
+            <section id="faq">
+                <div class="container">
+                    <!-- title -->
+                    <div class="lead">
+                        <h3> F.A.Q </h3>
+                    </div>
+                    <!-- detail -->
+                    <div>
+                        <!-- question 1 -->
+                        <details>
+                            <summary> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex? </summary>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur eligendi vero et
+                                perspiciatis unde minima dicta ducimus numquam suscipit similique. </p>
+                        </details>
+                        <!-- question 2 -->
+                        <details>
+                            <summary> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex? </summary>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur eligendi vero et
+                                perspiciatis unde minima dicta ducimus numquam suscipit similique. </p>
+                        </details>
+                        <!-- question 3 -->
+                        <details>
+                            <summary> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex? </summary>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur eligendi vero et
+                                perspiciatis unde minima dicta ducimus numquam suscipit similique. </p>
+                        </details>
+                        <!-- question 4 -->
+                        <details>
+                            <summary> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ex? </summary>
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur eligendi vero et
+                                perspiciatis unde minima dicta ducimus numquam suscipit similique. </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <!--
+				----------------
+				[ contact page ] ---------
+				----------------
+            -->
+            <section id="">
+
+                <!-- comment 
+					<form action="#" class="comment">
+						
+						<input type="text" name="name" class="fld" placeholder="&#9998; Your Good Name">
+							
+						<input type="email" name="mail" class="fld" placeholder="&#9993; Your Email Address">
+
+						<select name="subject" class="fld">
+							<option value="1"> Comment </option>
+							<option value="2"> Query </option>
+							<option value="3"> Information </option>
+							<option value="4"> Hire us </option>
+							<option value="5"> Work Offer </option>
+							<option value="6"> Meeting </option>
+						</select>
+						
+						<textarea name="message"class="fld" placeholder="&#9998; Message"></textarea>
+						
+						<input type="reset" name="submit" value="Click to Send Message &#10097" class="btn">
+						
+					</form>
+					-->
+                
+
+            </section>
+            <!--
+                ------------
+                [ location ] -----------
+                ------------
+            -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6861.822326897356!2d76.81661169186694!3d30.692775498413965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fecb23dac157d%3A0x672b396b308e0553!2sVikas%20Nagar%2C%20Chandigarh%2C%20Haryana%20160102!5e0!3m2!1sen!2sin!4v1687706982680!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                frameborder="0"
+                id="location"></iframe>
+
+            <a href="#" class="bi-gear" id="set_btn"></a>
+        
+        </div>
+        <!--
 			==================
 			| footer section |-----------------------------------------------
 			==================
 		-->
-		<footer id="footer"></footer>
+        <footer id="footer">
+            <!-- social media -->
+             <div id="social">
+                <div class="container">
+                    <div class="row">
 
-	</main>
-	<!--
+                        <div class="col">
+
+                            <h5> Connect with us </h5>
+
+                            <p> For daily inspiration, fresh perspectives, and a community that sparks creativity. Let's grow and inspire together! </p>
+
+                        </div>
+                        <div class="col">
+
+                            <a href="https://github.com/MayankDevil" target="_blank" title="MayankDevil" class="media">
+                                <span class="bi bi-github"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/MasterMayank" target="_blank" title="MasterMayank" class="media">
+                                <span class="bi bi-linkedin"></span>
+                            </a>
+                            <!--
+                            <a href="#" title="mastermayank91" class="media">
+                                <span class="bi bi-caret-right-square-fill"></span>
+                            </a> 
+                            -->
+                        </div>
+
+                    </div>
+                </div>
+             </div>
+            <!-- base links -->
+            <div id="baselink">
+                <div class="container">
+
+                    <!-- information -->
+                    <div class="link_box">
+
+                        <h5> Information </h5>
+
+                        <div class="links">
+
+                            <a href="#"> <span class="ent1"> &#10097; </span> Experiantion </a>
+                            <a href="#"> <span class="ent1"> &#10097; </span> About </a>
+                            <a href="#"> <span class="ent1"> &#10097; </span> Service </a>
+
+                        </div>
+
+                    </div>
+                    <!-- service -->
+                    <div class="link_box">
+
+                        <h5> Our Service </h5>
+
+                        <div class="links">
+
+                            <a href="https://mayankdevil.github.io/PRocoders" target="_blank"> <span class="ent1"> &#10097; </span> ProCoders Education PlatForm </a>
+                            <a href="https:mayankdevil.github.io/Project-2" target="_blank"> <span class="ent1"> &#10097; </span> GUPT Cyber Security </a>
+                            <a href="https:mayankdevil.github.io/Indardanus" target="_blank"> <span class="ent1"> &#10097; </span> Indardanus Colour Themes </a>
+                            <a href="https:mayankdevil.github.io/EntityCode" target="_blank"> <span class="ent1"> &#10097; </span> Entity Code </a>
+                            <a href="https:mayankdevil.github.io/CyberLaw" target="_blank"> <span class="ent1"> &#10097; </span> Cyber Law Awearness </a>
+
+                        </div>
+
+                    </div>
+                    <!-- contact -->
+                    <div class="link_box">
+
+                        <h5> Contact Us </h5>
+
+                        <div class="links">
+
+                            <b> <span class="bi-map"></span> Location </b>
+
+                            <a href="#location"> #420 Sector-13, Chandigarh pincode 160102 at India </a>
+
+                            <b> <span class="bi-phone" target="_blank"></span>  Number </b>
+
+                            <a href="tel:+9211420420"> 9211420420 </a>
+
+                            <b> <span class="bi-envelope"></span> Email </b>
+
+                            <a href="mailto:fack@gmailcom"> fack@gmailcom </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- copyright -->
+            <div id="copyRight">
+                <div class="container">
+
+                    &copy; Designed | Developed by <a href="https://mayankdevil.github.io/MayankDevil" title="MayankDevil" target="_blank"> Mayank </a>
+
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!--
 		----------
 		| script |
 		----------
 	-->
-	<script src="js/layout/header.js"></script>
-	<script src="js/layout/footer.js"></script>
-	<script src="js/layout/welcome.js"></script>
-	<script src="js/layout/fact.js"></script>
-	<script src="js/layout/vedio_page.js"></script>
-	<script src="js/layout/feature.js"></script>
-	<script src="js/script.js"></script>
+    <script src="js/serviceData.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/team_Data.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

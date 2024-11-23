@@ -67,7 +67,7 @@ body
 }
 ::placeholder
 {
-    color:var(--lblue);
+    color:var(--blue5);
 }
 ::-webkit-scrollbar
 {
@@ -105,12 +105,9 @@ body
     font-size: auto;
     color:var(--blue1);
 }
-
-.text-light
+.lead
 {
-    padding:1rem;
-    line-height:2rem;
-    color:var(--blue0);
+    background:var(--white);
 }
 
 h1
@@ -122,10 +119,15 @@ h1
 }
 h2
 {
+    padding: 10vh 0;
+    line-height: 7vw;
+    font-size: 5vw;
+    font-weight: normal;
+    color:var(--dark);
 }
 h3
 {
-    font-size:1.2rem;
+    font-size:2rem;
 }
 h4
 {
@@ -296,44 +298,6 @@ a:hover
 {
     padding-top: 3rem;
     background: var(--light);
-}
-
-/* newsletter */
-#newsletter form
-{
-    width: 80%;
-    margin:3rem auto;
-    display: flex;
-    background: transparent;
-    border:1px solid var(--blue5);
-    border-radius:1rem;
-}
-#email_fld
-{
-    width:70%;
-    padding: 0.5rem;
-    font:17px 'arial';
-    color: var(--blue6);
-    background: transparent;
-    border-radius: 1rem 0 0 1rem;
-}
-#email_fld::placeholder
-{
-    color:var(--blue5);
-}
-#email_btn
-{
-    width:30%;
-    padding: 0.5rem;
-    font:17px 'arial';
-    color:var(--white);
-    background: var(--blue5);
-    border-radius: 0 1rem 1rem 0;
-}
-#email_btn:hover
-{
-    color:var(--blue1);
-    background: var(--blue8);
 }
 
 /* baselinks */
@@ -795,32 +759,32 @@ ul li::first-letter
     PRICE CSS ---------------------------
 */
 
-#price_page .container
+.price_container
 {
     display: grid;
     grid-gap:2rem;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr) !important;
     padding: 6rem 1rem;
 }
-.price_box
+.price_card
 {
     display: block;
     background: var(--light);
     border-radius: 10px;
 }
-.price_box:nth-child(1)
+.price_card:nth-child(1)
 {
     background: var(--blue0);
 }
-.price_box:nth-child(2)
+.price_card:nth-child(2)
 {
     background: var(--blue9);
 }
-.price_box:hover
+.price_card:hover
 {
     box-shadow: 0 0 20px var(--gray);
 }
-.price_box .title
+.price_card .title
 {
     width: 100px;
     margin: 0 auto 10px 0;
@@ -830,19 +794,19 @@ ul li::first-letter
     background: var(--dark);
     border-radius: 10px 10px 10px 0;
 }
-.price_box .amount
+.price_card .amount
 {
     margin:3rem auto;
     text-align: center;
     font-size: 5rem;
     color:var(--blue1)
 }
-.price_box .amount sub
+.price_card .amount sub
 {
     font-size: 1rem;
     color: var(--dark);
 }
-.price_box .option
+.price_card .option
 {
     margin:2rem;
     padding: 2rem 0;
@@ -931,7 +895,95 @@ details > p
     height: 80vh;
     overflow: none;
 }
-
+/*
+    LOGIN CSS -------------------------
+*/
+#login
+{
+    background: rgba(241, 246, 254, 0.6) url(../data/bg1.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+#login .container
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+#login .col
+{
+    height: 100vh;
+    width: 50%;
+}
+#login .col:first-child
+{
+    padding: 2rem;
+}
+#login .col:last-child
+{
+    padding: 2rem;
+}
+form
+{
+    padding: 2rem;
+    display: grid;
+    grid-gap:2rem;
+    width: 80%;
+    margin: 3rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0  50px var(--blue9);
+}
+form div
+{
+    font-size: 2rem;
+}
+label
+{
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    color: var(--dark);
+}
+label .bi
+{
+    margin-right: 1rem;
+    border: 1px solid var(--blue5);
+    border-radius: 50%;
+}
+.fld
+{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+    color:var(--dark);
+    background: transparent;
+    border-bottom: 3px groove var(--blue9); 
+}
+#login_btn
+{
+    width: 200px;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0 10px 10px 0;
+    background: var(--dark);
+}
+#login_btn:hover
+{
+    transition: all 0.5s linear;
+    width: 175px;
+    background: var(--black);
+}
+.forget_link
+{
+    padding: 1rem 0;
+    text-align: right;
+    color:var(--blue7);
+}
+.forget_link:hover
+{
+    color:var(--blue6);
+}
 /*
     THE END ============================
 */

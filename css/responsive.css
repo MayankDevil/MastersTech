@@ -93,9 +93,9 @@
 	{
 		width: 90%;
 	}
-    #price_page .container
+    .price_container
     {
-        display: flex;
+        display: flex !important;
         justify-content:space-evenly;
         flex-wrap: wrap;
         flex:350px 1 1;

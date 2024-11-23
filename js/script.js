@@ -43,6 +43,9 @@ try
 	
 	let nav_link = document.querySelectorAll("#nav > a");
 
+
+	
+
 	/*
 		activeSection : between all section active once index
 	*/ 
@@ -56,7 +59,7 @@ try
 		
 		section[active_index].style.display = `block`
 	}
-	activeSection(section, 5)
+	// activeSection(section, 9)
 
 	function displayBlock(element,index)
 	{
@@ -67,7 +70,7 @@ try
 
 	
 
-	console.log(`एक प्रतिशत में से शीर्ष एक प्रतिशत, जो नियंत्रण में हैं, वे जो बिना अनुमति के भगवान की भूमिका निभाते हैं, और अब मैं उन्हें नीचे ले जाऊंगा। उन सभी को।`)
+	// console.log(`एक प्रतिशत में से शीर्ष एक प्रतिशत, जो नियंत्रण में हैं, वे जो बिना अनुमति के भगवान की भूमिका निभाते हैं, और अब मैं उन्हें नीचे ले जाऊंगा। उन सभी को।`)
 	
 	document.title = `MayankDevil`
 }

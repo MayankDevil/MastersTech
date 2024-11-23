@@ -43,7 +43,7 @@ try
      */ 
 
      team_page.insertAdjacentHTML("beforeend",`
-               <a href="#" class="team_member" id="join">
+               <a href="#footer" class="team_member" id="join">
 
                     <div class="bi-person-fill-add"></div>
 

@@ -10,17 +10,26 @@ try
 
     loginButton.onclick = () => {
 
-        document.getElementById('username')
+        let username = document.getElementById('username')
         
-        document.getElementById('email')
+        let email = document.getElementById('email')
+
+        let password = document.getElementById('password').value
+
+
+        let activeAccount = {
+            "username" : username.value,
+            "email" : email.value,
+            "password" : password.value
+        }
         
-        if (document.getElementById('password').value == 'open')
+        if (password.value == 'open')
         {
             window.open('./app.html','_self',true)
         }
         else
         {
-            
+            console.log("_access is denied?")
         }
     }
 

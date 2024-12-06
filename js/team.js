@@ -49,7 +49,7 @@ try
 
                     <div class="border"></div>
                     
-                    <div class="center"> <b>Join us</b> </div>
+                    <div class="center"> <h5>Join us</h5> </div>
                     
                     <p class="center">  let start the journey today by make once of us </p>
                          

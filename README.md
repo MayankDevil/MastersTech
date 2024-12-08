@@ -1,20 +1,20 @@
 # website 4
 
-- Name : "Master Company"
+- Name : "Society"
 
-- Description : "Self Bussiness"
+- Description : "a group of some people that start new beigging at world"
 
-- Version : 4.4
+- Version : 2.0
 
 - Update : 24-06-2023
 
-- Status : REST
+- Status : ACTIVE
 
-- Responsive : True
+- Responsive : Ture
 
 - TecStack : { HTML | CSS | JavaScript | JSON }
 
-- Thanks : { VSCodium | GitHub | Fontawesome | GoogleFont | GoogleMap | Unplash }
+- Thanks : { VSCodium | GitHub | Bootstrap-Icon | GoogleMap | Unplash }
 
 - Work : Self
 
@@ -22,17 +22,17 @@
 
 - Developer : { Mayank }
 
-- CopyRight : { Master Compnay }
+- CopyRight : { Society | Mayank }
 
-- URL : https://mayankdevil.github.io/website-4/
+- URL : https://mayankdevil.github.io/Society/
 
-- Clone : https://github.com/MayankDevil/website-4.git
+- Clone : https://github.com/MayankDevil/Society.git
 
-- Download : https://github.com/MayankDevil/website-4/archive/refs/heads/main.zip
+- Download : https://github.com/MayankDevil/Society/archive/refs/heads/main.zip
 
 ---
 
-### Home Page
+### Look & Feel
 
 ![Alt text](./data/MasterCompany.png "HomePage")
 

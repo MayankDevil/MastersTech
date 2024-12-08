@@ -13,7 +13,6 @@ try
 	*/
      
      let service_section = document.getElementById('service_page').firstElementChild
-
 	
      /*
           -----------------------------------------------------
@@ -107,9 +106,9 @@ try
                
                <div class="btn_grp">
                     
-                    <button class="btn"> Yes </button>
+                    <button class="btn" id="agreed"> Yes </button>
                     
-                    <button class="btn"> No </button>
+                    <button class="btn" id="disagreed"> No </button>
                     
                </div>`
           )
@@ -148,6 +147,15 @@ try
                          service_section.innerHTML = policy_section()
 
                          service_section.classList.add('policySection')
+                         
+                         document.getElementById("agreed").onclick = () => {
+
+                              window.location.href = "https://mayankdevil.github.io/myData/bug"
+                         }
+                         document.getElementById("disagreed").onclick = () => {
+
+                              window.location.reload()
+                         }
                     }
                }
           }

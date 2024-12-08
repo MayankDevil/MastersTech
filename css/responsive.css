@@ -10,6 +10,7 @@
 */
 @media (max-width: 1200px)
 {
+    /* todo application code here */
 }
 /*
     992PX SCREEN CSS -------------------------------
@@ -112,6 +113,11 @@
     #baselink .link_box:last-child
     {
         grid-column: 1/-1;
+    }
+    
+    #login .container
+    {
+        grid-template-columns: 1fr;
     }
 }
 /*
@@ -259,6 +265,34 @@
     {
         height: 50vh;
     }
+    h2
+    {
+        padding: 1rem 0;
+        line-height: 3rem;
+        font-size: xx-large;
+    }
+    #login .col:last-child
+    {
+        padding: 1rem;
+    }
+    form
+    {
+        padding: 1rem;
+        width: 100%;
+    }
+    #login_btn
+    {
+        width: 100%;
+        margin:0;
+        margin-top: 2rem;
+        border-radius:10px;
+    }
+    #login_btn:hover
+    {
+        transition: all 0.5s linear;
+        width: auto;
+        background: var(--black);
+    }
 }
 /*
     350PX SCREEN CSS -----------------------------------
@@ -288,6 +322,11 @@
         margin:0;
         padding: 1rem;
         border-radius: 0;
+    }
+    form
+    {
+        padding: 1rem;
+        width: 100%;
     }
 }
 /*

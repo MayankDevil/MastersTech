@@ -293,6 +293,7 @@ a:hover
 #nav a:hover,
 #nav a:active
 {
+    transition: all linear 0.3s;
     color:var(--blue5);
     background: var(--blue0);
 }
@@ -954,7 +955,7 @@ details > p
     height: 100vh;
     padding: 2rem;
 }
-form
+#login form
 {
     padding: 2rem;
     display: grid;
@@ -965,17 +966,17 @@ form
     border-radius: 10px;
     box-shadow: 0 0  50px var(--blue9);
 }
-form div
+#login form div
 {
     font-size: 2rem;
 }
-label
+#login label
 {
     margin-top: 2rem;
     letter-spacing: 1px;
     color: var(--dark);
 }
-label .bi
+#login label .bi
 {
     margin-right: 1rem;
     border: 1px solid var(--blue5);
@@ -1017,6 +1018,93 @@ label .bi
 {
     color:var(--blue6);
 }
+
+/*
+    COMMENT SECTION ------------------
+*/
+#menu
+{
+    /* background: linear-gradient(90deg, var(--blue6), var(--blue0)); */
+}
+#menu .container
+{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#comment .row
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 10% auto;
+    border: 2px solid var(--light);
+    border-left: 5px solid var(--blue5);
+}
+
+#comment .row .col:first-child
+{
+    padding: 2rem;
+}
+
+.fldbox
+{
+    padding: 1rem 0;
+}
+
+#comment label
+{
+    display: inline-block;
+    padding: 25px 5px;
+}
+
+#comment .fld
+{
+    padding:1rem;
+    border:2px solid var(--blue6);
+    border-radius: 10px;
+}
+
+#comment textarea
+{
+    height: 100px;
+    overflow: auto;
+}
+
+.input_grp
+{
+    padding: 2rem 0;
+}
+
+#submit_btn, #reset_btn
+{
+    width: 150px;
+    padding: 1rem;
+    font-size: 1rem;
+    display: inline-block;
+    background: var(--blue6);
+    border:1px solid var(--blue6);
+    border-radius: 0;
+}
+#submit_btn
+{
+    border-radius: 10px 0 0 10px;
+}
+#reset_btn
+{    
+    color:var(--blue6);
+    background: transparent;
+    border-radius: 0 10px 10px 0;
+}
+:is(#submit_btn, #reset_btn):hover
+{
+    color: var(--white);
+    background: var(--blue4);
+}
+
+
 /*
     THE END ============================
 */

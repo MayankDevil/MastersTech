@@ -6,6 +6,7 @@
 */
 try
 {
+	console.log(`welcome in society!`)
 	/*
 		{ menu operaion end } ==========
 	*/
@@ -46,7 +47,9 @@ try
 	
 	document.getElementById("mail_btn").onclick = () => {
 		
-		activeSection(section, 0)
+		// activeSection(section, 0)
+
+		window.location.href = "https://mayankdevil.github.io/EvilCorp";
 	}
 	
 	// console.log(`एक प्रतिशत में से शीर्ष एक प्रतिशत, जो नियंत्रण में हैं, वे जो बिना अनुमति के भगवान की भूमिका निभाते हैं, और अब मैं उन्हें नीचे ले जाऊंगा। उन सभी को।`)

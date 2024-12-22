@@ -27,7 +27,7 @@ try
           {
                name : "Alisha",
                image : "Alisha.jpg",
-               qoute : null,
+               qoute : "We are work in the dark to serve the light.",
                protfolio : "https://alishabeg.github.io/AlishaBeg/"
           },
           {
@@ -45,7 +45,7 @@ try
           {
                name : "Uday",
                image : "Uday.jpg",
-               qoute : null,
+               qoute : "Money is not most important think in life but its important.",
                protfolio : "#"
           },
           {
